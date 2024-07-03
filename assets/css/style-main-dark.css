@@ -1,0 +1,17 @@
+/* --------------------------------------
+$Author: ThemeMascot
+$URL: https://themeforest.net/user/ThemeMascot
+----------------------------------------- */
+:root {
+  --theme-color-white: #0d0d0d;
+  --theme-color-light: #1d1d1d;
+  --theme-color-gray: #111;
+  --text-color: #8c8f94;
+  --headings-color: #eee;
+  --section-title-color: var(--headings-color);
+  --section-title-subtitle-color: var(--text-color);
+}
+
+body.tm-dark-layout {
+  background-color: #141212;
+}

@@ -1,0 +1,31 @@
+/* --------------------------------------
+$Author: ThemeMascot
+$URL: https://themeforest.net/user/ThemeMascot
+----------------------------------------- */
+
+$heading-dark-color: #fcfcfc;
+
+// Import bootstrap variables and mixins for reference
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+
+@import "scss-core/variables";
+
+:root {
+  --theme-color-white: #0d0d0d;
+  --theme-color-light: #1d1d1d;
+  --theme-color-gray: #111;
+
+  --text-color: #8c8f94;
+  --headings-color: #eee;
+
+  --section-title-color: var(--headings-color);
+  --section-title-subtitle-color: var(--text-color);
+}
+
+body {
+  &.tm-dark-layout {
+    background-color: #141212;
+  }
+}
