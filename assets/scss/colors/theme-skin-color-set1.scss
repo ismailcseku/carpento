@@ -5,10 +5,10 @@ $URL: https://themeforest.net/user/ThemeMascot
 ----------------------------------------- */
 $total-theme-colors: 4;
 
-$theme-color1: #df1119;
-$theme-color2: #000000;
+$theme-color1: #c69453;
+$theme-color2: #24201f;
 $theme-color3: #f3f4f7;
-$theme-color4: #b5090d;
+$theme-color4: #164333;
 
 @function hexToRGB($hex) {
   @return red($hex), green($hex), blue($hex);

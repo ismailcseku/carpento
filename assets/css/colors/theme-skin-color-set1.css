@@ -4,22 +4,22 @@ $URL: https://themeforest.net/user/ThemeMascot
 
 ----------------------------------------- */
 :root {
-  --theme-color1: #df1119;
-  --theme-color1-rgb: 223, 17, 25;
-  --theme-color1-lighter: #f0383f;
-  --theme-color1-darker: #ab0d13;
-  --theme-color2: #000000;
-  --theme-color2-rgb: 0, 0, 0;
-  --theme-color2-lighter: #1c1c1c;
-  --theme-color2-darker: black;
+  --theme-color1: #c69453;
+  --theme-color1-rgb: 198, 148, 83;
+  --theme-color1-lighter: #d4ae7d;
+  --theme-color1-darker: #a97838;
+  --theme-color2: #24201f;
+  --theme-color2-rgb: 36, 32, 31;
+  --theme-color2-lighter: #423b39;
+  --theme-color2-darker: #060505;
   --theme-color3: #f3f4f7;
   --theme-color3-rgb: 243, 244, 247;
   --theme-color3-lighter: white;
   --theme-color3-darker: #d1d5e1;
-  --theme-color4: #b5090d;
-  --theme-color4-rgb: 181, 9, 13;
-  --theme-color4-lighter: #ea0c11;
-  --theme-color4-darker: #800609;
+  --theme-color4: #164333;
+  --theme-color4-rgb: 22, 67, 51;
+  --theme-color4-lighter: #246d53;
+  --theme-color4-darker: #081913;
   --gradient-1: linear-gradient(to right, rgba(var(--theme-color1-rgb), 1) 0%, rgba(var(--theme-color4-rgb), 1) 100%);
   --gradient-2: linear-gradient(to left, rgba(var(--theme-color1-rgb), 1) 0%, rgba(var(--theme-color4-rgb), 1) 100%);
   --gradient-3: linear-gradient(-135deg, rgba(23, 23, 23, 0) 50%, var(--theme-color1) 100%);
@@ -27,7 +27,7 @@ $URL: https://themeforest.net/user/ThemeMascot
   --text-color-bg-theme-color2: #fff;
   --text-color-bg-theme-color3: #fff;
   --text-color-bg-theme-color4: #fff;
-  --hover-theme-color: #df1119;
+  --hover-theme-color: #c69453;
   --sidebar-default-theme-color: var(--theme-color1);
   --footer-default-theme-color: var(--theme-color1);
   --footer-default-hover-theme-color: var(--theme-color1);
@@ -45,7 +45,7 @@ $URL: https://themeforest.net/user/ThemeMascot
 }
 
 .hr-divider {
-  border-top-color: rgba(223, 17, 25, 0.2) !important;
+  border-top-color: rgba(198, 148, 83, 0.2) !important;
 }
 
 /*
@@ -73,7 +73,7 @@ $URL: https://themeforest.net/user/ThemeMascot
   color: #fff;
 }
 .tm-sc-blog.blog-alternative-design .isotope-layout-inner .isotope-item:not(.isotope-item-sizer):nth-child(8n+1) article .post-thumb .post-thumb-inner .thumb:after, .tm-sc-blog.blog-alternative-design .isotope-layout-inner .isotope-item:not(.isotope-item-sizer):nth-child(8n+3) article .post-thumb .post-thumb-inner .thumb:after, .tm-sc-blog.blog-alternative-design .isotope-layout-inner .isotope-item:not(.isotope-item-sizer):nth-child(8n+6) article .post-thumb .post-thumb-inner .thumb:after, .tm-sc-blog.blog-alternative-design .isotope-layout-inner .isotope-item:not(.isotope-item-sizer):nth-child(8n+8) article .post-thumb .post-thumb-inner .thumb:after {
-  background-color: rgba(223, 17, 25, 0.94);
+  background-color: rgba(198, 148, 83, 0.94);
 }
 
 /*
@@ -81,25 +81,25 @@ $URL: https://themeforest.net/user/ThemeMascot
  * -----------------------------------------------
 */
 .btn-theme-colored1 {
-  color: #fff;
-  background-color: #df1119;
-  border-color: #df1119;
+  color: #000;
+  background-color: #c69453;
+  border-color: #c69453;
 }
 .btn-theme-colored1:hover {
-  color: #fff;
-  background-color: #be0e15;
-  border-color: #b20e14;
+  color: #000;
+  background-color: #cfa46d;
+  border-color: #cc9f64;
 }
 
 .btn-theme-colored2 {
   color: #fff;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #24201f;
+  border-color: #24201f;
 }
 .btn-theme-colored2:hover {
   color: #fff;
-  background-color: black;
-  border-color: black;
+  background-color: #1f1b1a;
+  border-color: #1d1a19;
 }
 
 .btn-theme-colored3 {
@@ -115,33 +115,33 @@ $URL: https://themeforest.net/user/ThemeMascot
 
 .btn-theme-colored4 {
   color: #fff;
-  background-color: #b5090d;
-  border-color: #b5090d;
+  background-color: #164333;
+  border-color: #164333;
 }
 .btn-theme-colored4:hover {
   color: #fff;
-  background-color: #9a080b;
-  border-color: #91070a;
+  background-color: #13392b;
+  border-color: #123629;
 }
 
 .btn-outline-theme-colored1 {
-  color: #df1119;
-  border-color: #df1119;
+  color: #c69453;
+  border-color: #c69453;
 }
 .btn-outline-theme-colored1:hover {
-  color: #fff;
-  background-color: #df1119;
-  border-color: #df1119;
+  color: #000;
+  background-color: #c69453;
+  border-color: #c69453;
 }
 
 .btn-outline-theme-colored2 {
-  color: #000000;
-  border-color: #000000;
+  color: #24201f;
+  border-color: #24201f;
 }
 .btn-outline-theme-colored2:hover {
   color: #fff;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #24201f;
+  border-color: #24201f;
 }
 
 .btn-outline-theme-colored3 {
@@ -155,13 +155,13 @@ $URL: https://themeforest.net/user/ThemeMascot
 }
 
 .btn-outline-theme-colored4 {
-  color: #b5090d;
-  border-color: #b5090d;
+  color: #164333;
+  border-color: #164333;
 }
 .btn-outline-theme-colored4:hover {
   color: #fff;
-  background-color: #b5090d;
-  border-color: #b5090d;
+  background-color: #164333;
+  border-color: #164333;
 }
 
 .btn-theme-colored1 {
@@ -291,15 +291,15 @@ input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colore
  * -----------------------------------------------
 */
 .woocommerce .button:not(.compare):not(.yith-wcqv-button):not([name=apply_coupon]), .woosc_table .button, .woosc_table .added_to_cart, .woosw-item .added_to_cart {
-  color: #fff;
-  background-color: #df1119;
-  border-color: #df1119;
+  color: #000;
+  background-color: #c69453;
+  border-color: #c69453;
   color: var(--text-color-bg-theme-color1) !important;
 }
 .woocommerce .button:not(.compare):not(.yith-wcqv-button):not([name=apply_coupon]):hover, .woosc_table .button:hover, .woosc_table .added_to_cart:hover, .woosw-item .added_to_cart:hover {
-  color: #fff;
-  background-color: #be0e15;
-  border-color: #b20e14;
+  color: #000;
+  background-color: #cfa46d;
+  border-color: #cc9f64;
 }
 .woocommerce .button:not(.compare):not(.yith-wcqv-button):not([name=apply_coupon]):hover, .woosc_table .button:hover, .woosc_table .added_to_cart:hover, .woosw-item .added_to_cart:hover {
   color: var(--text-color-bg-theme-color3) !important;
@@ -321,9 +321,9 @@ input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colore
  * -----------------------------------------------
 */
 .scroll-to-top a {
-  background-image: linear-gradient(to right, #df1119 0%, #f1444b 51%, #df1119 100%);
+  background-image: linear-gradient(to right, #c69453 0%, #d7b487 51%, #c69453 100%);
 }
 .scroll-to-top a:hover {
-  box-shadow: 0 10px 20px rgba(223, 17, 25, 0.5);
+  box-shadow: 0 10px 20px rgba(198, 148, 83, 0.5);
   background-position: right center;
 }

@@ -25,11 +25,11 @@ This file contains the common styles of this theme.
   --body-font-size: 1rem;
   --body-font-weight: 400;
   --body-font-bold: 400;
-  --text-color: #444444;
+  --text-color: #6a6f78;
   --link-color: #352f27;
   --link-hover-color: #5b8c51;
   --entry-meta-color: #819291;
-  --headings-color: #000000;
+  --headings-color: #24201f;
   --h1-font-size: 3.8rem;
   --h1-font-size-mob: 2.5rem;
   --h2-font-size: 3rem;
@@ -41,9 +41,9 @@ This file contains the common styles of this theme.
   --headings-font-weight-h1: 700;
   --headings-font-weight-h2: 700;
   --headings-font-weight-h3: 700;
-  --headings-font-weight-h4: 700;
-  --headings-font-weight-h5: 700;
-  --headings-font-weight-h6: 700;
+  --headings-font-weight-h4: 500;
+  --headings-font-weight-h5: 500;
+  --headings-font-weight-h6: 500;
   --section-title-color: var(--headings-color);
   --section-title-font-size: 50px;
   --section-title-line-height: 1.2em;
