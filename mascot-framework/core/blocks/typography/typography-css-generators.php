@@ -12,6 +12,11 @@ if (!function_exists('carpento_typography_primary_body')) {
 			'p',
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-family'])) $declaration['--body-font-family'] = $declaration['font-family'];
+		if(isset($declaration['font-size'])) $declaration['--body-font-size'] = $declaration['font-size'];
+		if(isset($declaration['font-weight'])) $declaration['--body-font-weight'] = $declaration['font-weight'];
+		if(isset($declaration['line-height'])) $declaration['--body-line-height'] = $declaration['line-height'];
+		if(isset($declaration['color'])) $declaration['--text-color'] = $declaration['color'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_primary_body');
@@ -39,6 +44,7 @@ if (!function_exists('carpento_typography_primary_link_color')) {
 		}
 		
 		$declaration['color'] = $carpento_redux_theme_opt[$var_name];
+		$declaration['--link-color'] = $declaration['color'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_primary_link_color');
@@ -59,6 +65,11 @@ if (!function_exists('carpento_typography_section_title')) {
 			'.tm-sc-section-title .title-wrapper h2.title',
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['color'])) $declaration['--section-title-color'] = $declaration['color'];
+		if(isset($declaration['font-size'])) $declaration['--section-title-font-size'] = $declaration['font-size'];
+		if(isset($declaration['line-height'])) $declaration['--section-title-line-height'] = $declaration['line-height'];
+		if(isset($declaration['font-family'])) $declaration['--section-title-font-family'] = $declaration['font-family'];
+		if(isset($declaration['font-weight'])) $declaration['--section-title-font-weight'] = $declaration['font-weight'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_section_title');
@@ -75,9 +86,14 @@ if (!function_exists('carpento_typography_section_subtitle')) {
 		$var_name = 'typography-section-subtitle';
 		$declaration = array();
 		$selector = array(
-			'.tm-sc-section-title .title-wrapper .subtitle',
+			'.tm-sc-section-title .title-wrapper .sub-title-outer .subtitle',
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['color'])) $declaration['--section-title-subtitle-color'] = $declaration['color'];
+		if(isset($declaration['font-size'])) $declaration['--section-title-subtitle-font-size'] = $declaration['font-size'];
+		if(isset($declaration['line-height'])) $declaration['--section-title-subtitle-line-height'] = $declaration['line-height'];
+		if(isset($declaration['font-family'])) $declaration['--section-title-subtitle-font-family'] = $declaration['font-family'];
+		if(isset($declaration['font-weight'])) $declaration['--section-title-subtitle-font-weight'] = $declaration['font-weight'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_section_subtitle');
@@ -102,6 +118,14 @@ if (!function_exists('carpento_typography_h1_h6')) {
 			'h6, .h6'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-family'])) $declaration['--heading-font-family'] = $declaration['font-family'];
+		if(isset($declaration['color'])) $declaration['--headings-color'] = $declaration['color'];
+		if(isset($declaration['font-weight'])) $declaration['--headings-font-weight-h1'] = $declaration['font-weight'];
+		if(isset($declaration['font-weight'])) $declaration['--headings-font-weight-h2'] = $declaration['font-weight'];
+		if(isset($declaration['font-weight'])) $declaration['--headings-font-weight-h3'] = $declaration['font-weight'];
+		if(isset($declaration['font-weight'])) $declaration['--headings-font-weight-h4'] = $declaration['font-weight'];
+		if(isset($declaration['font-weight'])) $declaration['--headings-font-weight-h5'] = $declaration['font-weight'];
+		if(isset($declaration['font-weight'])) $declaration['--headings-font-weight-h6'] = $declaration['font-weight'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h1_h6');
@@ -121,6 +145,7 @@ if (!function_exists('carpento_typography_h1')) {
 			'h1, .h1'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-size'])) $declaration['--h1-font-size'] = $declaration['font-size'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h1');
@@ -171,6 +196,7 @@ if (!function_exists('carpento_typography_h2')) {
 			'h2, .h2'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-size'])) $declaration['--h2-font-size'] = $declaration['font-size'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h2');
@@ -221,6 +247,7 @@ if (!function_exists('carpento_typography_h3')) {
 			'h3, .h3'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-size'])) $declaration['--h3-font-size'] = $declaration['font-size'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h3');
@@ -271,6 +298,7 @@ if (!function_exists('carpento_typography_h4')) {
 			'h4, .h4'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-size'])) $declaration['--h4-font-size'] = $declaration['font-size'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h4');
@@ -321,6 +349,7 @@ if (!function_exists('carpento_typography_h5')) {
 			'h5, .h5'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-size'])) $declaration['--h5-font-size'] = $declaration['font-size'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h5');
@@ -371,6 +400,7 @@ if (!function_exists('carpento_typography_h6')) {
 			'h6, .h6'
 		);
 		$declaration = carpento_redux_option_field_typography( $var_name );
+		if(isset($declaration['font-size'])) $declaration['--h6-font-size'] = $declaration['font-size'];
 		carpento_dynamic_css_generator($selector, $declaration);
 	}
 	add_action('carpento_dynamic_css_generator_action', 'carpento_typography_h6');

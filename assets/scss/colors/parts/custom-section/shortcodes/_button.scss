@@ -34,9 +34,12 @@ $tm-btn-theme-colors: map-merge(
   background-color: var(--theme-color1);
   border-color: var(--theme-color1);
   &:hover, &:focus {
-    color: var(--text-color-bg-theme-color1);
+    color: var(--text-color-bg-theme-color2);
     background-color: var(--theme-color1);
     border-color: var(--theme-color1);
+  }
+  &:before {
+    background-color: var(--theme-color2);
   }
 }
 .btn-theme-colored2 {
@@ -73,11 +76,49 @@ $tm-btn-theme-colors: map-merge(
   }
 }
 
+.btn-theme-colored3,
+.btn-theme-colored4,
+.btn-outline-theme-colored3,
+.btn-outline-theme-colored3 {
+  &:before {
+    background: var(--theme-color1);
+  }
+}
+
 .btn-outline-theme-colored1,
 .btn-outline-theme-colored2 {
   &:hover {
     border-color: var(--theme-color3) !important;
     color: #fff !important;
+  }
+}
+
+input[type="submit"].btn-theme-colored1 {
+  &:hover,
+  &:focus {
+    color: var(--text-color-bg-theme-color2);
+    background-color: var(--theme-color2);
+  }
+}
+input[type="submit"].btn-theme-colored2 {
+  &:hover,
+  &:focus {
+    color: var(--text-color-bg-theme-color1);
+    background-color: var(--theme-color1);
+  }
+}
+input[type="submit"].btn-theme-colored3 {
+  &:hover,
+  &:focus {
+    color: var(--text-color-bg-theme-color1);
+    background-color: var(--theme-color1);
+  }
+}
+input[type="submit"].btn-theme-colored4 {
+  &:hover,
+  &:focus {
+    color: var(--text-color-bg-theme-color1);
+    background-color: var(--theme-color1);
   }
 }
 
@@ -114,42 +155,5 @@ $tm-btn-theme-colors: map-merge(
     &:before {
       background-color: var(--theme-color2);
     }
-  }
-}
-
-.btn-theme-colored3,
-.btn-theme-colored4,
-.btn-outline-theme-colored3,
-.btn-outline-theme-colored3 {
-  &:before {
-    background: var(--theme-color1);
-  }
-}
-input[type="submit"].btn-theme-colored1 {
-  &:hover,
-  &:focus {
-    color: var(--text-color-bg-theme-color2);
-    background-color: var(--theme-color2);
-  }
-}
-input[type="submit"].btn-theme-colored2 {
-  &:hover,
-  &:focus {
-    color: var(--text-color-bg-theme-color1);
-    background-color: var(--theme-color1);
-  }
-}
-input[type="submit"].btn-theme-colored3 {
-  &:hover,
-  &:focus {
-    color: var(--text-color-bg-theme-color1);
-    background-color: var(--theme-color1);
-  }
-}
-input[type="submit"].btn-theme-colored4 {
-  &:hover,
-  &:focus {
-    color: var(--text-color-bg-theme-color1);
-    background-color: var(--theme-color1);
   }
 }
