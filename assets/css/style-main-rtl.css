@@ -5770,6 +5770,10 @@ table td, table th {
   text-transform: uppercase;
   margin-bottom: 0px;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
   transition: all 0.3s ease;
 }
 .tm-sc-section-title .title-wrapper .sub-title-outer .divider {

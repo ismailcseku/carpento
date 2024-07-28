@@ -170,9 +170,12 @@ $URL: https://themeforest.net/user/ThemeMascot
   border-color: var(--theme-color1);
 }
 .btn-theme-colored1:hover, .btn-theme-colored1:focus {
-  color: var(--text-color-bg-theme-color1);
+  color: var(--text-color-bg-theme-color2);
   background-color: var(--theme-color1);
   border-color: var(--theme-color1);
+}
+.btn-theme-colored1:before {
+  background-color: var(--theme-color2);
 }
 
 .btn-theme-colored2 {
@@ -211,10 +214,37 @@ $URL: https://themeforest.net/user/ThemeMascot
   border-color: var(--theme-color4);
 }
 
+.btn-theme-colored3:before,
+.btn-theme-colored4:before,
+.btn-outline-theme-colored3:before,
+.btn-outline-theme-colored3:before {
+  background: var(--theme-color1);
+}
+
 .btn-outline-theme-colored1:hover,
 .btn-outline-theme-colored2:hover {
   border-color: var(--theme-color3) !important;
   color: #fff !important;
+}
+
+input[type=submit].btn-theme-colored1:hover, input[type=submit].btn-theme-colored1:focus {
+  color: var(--text-color-bg-theme-color2);
+  background-color: var(--theme-color2);
+}
+
+input[type=submit].btn-theme-colored2:hover, input[type=submit].btn-theme-colored2:focus {
+  color: var(--text-color-bg-theme-color1);
+  background-color: var(--theme-color1);
+}
+
+input[type=submit].btn-theme-colored3:hover, input[type=submit].btn-theme-colored3:focus {
+  color: var(--text-color-bg-theme-color1);
+  background-color: var(--theme-color1);
+}
+
+input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colored4:focus {
+  color: var(--text-color-bg-theme-color1);
+  background-color: var(--theme-color1);
 }
 
 .btn-light:before,
@@ -253,33 +283,6 @@ $URL: https://themeforest.net/user/ThemeMascot
 .btn-outline-dark:hover:before,
 .btn-outline-dark:focus:before {
   background-color: var(--theme-color2);
-}
-
-.btn-theme-colored3:before,
-.btn-theme-colored4:before,
-.btn-outline-theme-colored3:before,
-.btn-outline-theme-colored3:before {
-  background: var(--theme-color1);
-}
-
-input[type=submit].btn-theme-colored1:hover, input[type=submit].btn-theme-colored1:focus {
-  color: var(--text-color-bg-theme-color2);
-  background-color: var(--theme-color2);
-}
-
-input[type=submit].btn-theme-colored2:hover, input[type=submit].btn-theme-colored2:focus {
-  color: var(--text-color-bg-theme-color1);
-  background-color: var(--theme-color1);
-}
-
-input[type=submit].btn-theme-colored3:hover, input[type=submit].btn-theme-colored3:focus {
-  color: var(--text-color-bg-theme-color1);
-  background-color: var(--theme-color1);
-}
-
-input[type=submit].btn-theme-colored4:hover, input[type=submit].btn-theme-colored4:focus {
-  color: var(--text-color-bg-theme-color1);
-  background-color: var(--theme-color1);
 }
 
 /*

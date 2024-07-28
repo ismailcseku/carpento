@@ -58,6 +58,10 @@
         text-transform: uppercase;
         margin-bottom: 0px;
         padding-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 5px;
         @include transition(all 0.3s ease);
       }
       .divider {
