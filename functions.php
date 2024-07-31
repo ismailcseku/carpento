@@ -237,9 +237,10 @@ if(!function_exists('carpento_action_wp_enqueue_scripts')) {
 			wp_enqueue_style( 'carpento-style-main', CARPENTO_TEMPLATE_URI . '/assets/css/style-main' . $direction_suffix . '.css', array(), CARPENTO_THEME_VERSION );
 
 			//woo
+			wp_register_style( 'carpento-woo-shop', CARPENTO_TEMPLATE_URI . '/assets/css/shop/woo-shop' . $direction_suffix . '.css', array('carpento-style-main') );
 			$direction_suffix = is_rtl() ? '.rtl' : '';
 			if ( carpento_is_woocommerce_page() ) {
-				wp_enqueue_style( 'carpento-woo-shop', CARPENTO_TEMPLATE_URI . '/assets/css/shop/woo-shop' . $direction_suffix . '.css', array('carpento-style-main') );
+				wp_enqueue_style( 'carpento-woo-shop');
 				wp_enqueue_style( 'carpento-woo-shop-single', CARPENTO_TEMPLATE_URI . '/assets/css/shop/shop-single' . $direction_suffix . '.css', array('carpento-style-main') );
 			}
 			if ( carpento_exists_woocommerce() ) {
@@ -318,7 +319,6 @@ if(!function_exists('carpento_action_wp_enqueue_scripts')) {
 			} else if( carpento_get_redux_option( 'general-settings-enable-dark-mode' ) ) {
 				wp_enqueue_style( 'carpento-style-main-dark', CARPENTO_TEMPLATE_URI . '/assets/css/style-main-dark.css' );
 			}
-
 
 			//Dynamic Style
 			if ( !is_multisite() ) {
