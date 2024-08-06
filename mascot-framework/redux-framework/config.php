@@ -1163,6 +1163,7 @@
 				'options' => array(
 					'container-970px'     => esc_html__( '970px', 'carpento' ),
 					'container-default'   => esc_html__( '1170px (Bootstrap Default)', 'carpento' ),
+					'container-elementor-default'    => esc_html__( 'Elementor Default', 'purerelax' ),
 					'container-1230px'    => esc_html__( '1230px', 'carpento' ),
 					'container-1300px'    => esc_html__( '1300px', 'carpento' ),
 					'container-1340px'    => esc_html__( '1340px', 'carpento' ),
